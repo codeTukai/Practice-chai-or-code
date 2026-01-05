@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chase Master</title>
+  <style>
+    body {
+      font-family: monospace;
+      background: #111;
+      color: #0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    pre {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <pre id="game"></pre>
+
+  <script>
+    const WIDTH = 20;
+    const HEIGHT = 10;
+
+    let playerX, playerY, enemyX, enemyY, gameOver, score, highScore = 0;
+    const gameEl = document.getElementById("game");
+
+    function initGame() {
+      playerX = Math.floor(WIDTH / 2);
+      playerY = Math.floor(HEIGHT / 2);
+      enemyX = 0;
+      enemyY = 0;
+      gameOver = false;
+      score = 0;
+      drawBoard();
+    }
+
+    function drawBoard() {
+      let output = "";
+      for (let y = 0; y < HEIGHT; y++) {
+        for (let x = 0; x < WIDTH; x++) {
+          if (x === playerX && y === playerY) {
+            output += "P"; // Player
+          } else if (x === enemyX && y === enemyY) {
+            output += "E"; // Enemy
+          } else {
+            output += ".";
+          }
+        }
+        output += "\n";
+      }
+      output += `\n🏃 Moves Survived: ${score}`;
+      output += `\n⭐ High Score: ${highScore}\n`;
+
+      if (gameOver) {
+        output += "\n💀 Chase Master – You were caught!\n";
+        output += `👉 You survived ${score} moves!\n`;
+        output += "👉 Press 'R' to Restart\n";
+      }
+
+      gameEl.textContent = output;
+    }
+
+    function moveEnemy() {
+      if (enemyX < playerX) enemyX++;
+      else if (enemyX > playerX) enemyX--;
+
+      if (enemyY < playerY) enemyY++;
+      else if (enemyY > playerY) enemyY--;
+
+      if (enemyX === playerX && enemyY === playerY) {
+        gameOver = true;
+        if (score > highScore) highScore = score; // update high score
+      }
+    }
+
+    function handleInput(e) {
+      if (e.key.toLowerCase() === "r" && gameOver) {
+        initGame();
+        return;
+      }
+      if (gameOver) return;
+
+      switch (e.key.toLowerCase()) {
+        case "w": playerY--; break;
+        case "s": playerY++; break;
+        case "a": playerX--; break;
+        case "d": playerX++; break;
+        case "q": gameOver = true; break;
+      }
+
+      // keep inside bounds
+      if (playerX < 0) playerX = 0;
+      if (playerX >= WIDTH) playerX = WIDTH - 1;
+      if (playerY < 0) playerY = 0;
+      if (playerY >= HEIGHT) playerY = HEIGHT - 1;
+
+      moveEnemy();
+      score++;
+      drawBoard();
+    }
+
+    // Key listener
+    document.addEventListener("keydown", handleInput);
+
+    // Start
+    initGame();
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai or code</title>
+</head>
+<body style="background-color: #212121; color: #ffff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+
+<script>
+          function addLanguage(langName) {
+            const li = document.createElement('li') // create an element 
+            li.innerHTML = `${langName}`//innerHTML is a property of DOM 
+            
+            document.querySelector('.language').appendChild(li)
+            
+          }
+          addLanguage("Python")
+          addLanguage("typescript")
+
+          function addOptimize(langName) {
+            const li =document.createElement('li')
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').appendChild(li)
+
+            
+          }
+          addOptimize('golang')
+
+          //Edit
+
+          const secondLang = document.querySelector("li:nth-child(2)")
+        //   secondLang.innerHTML = "mojo"
+        const newItem = document.createElement('li')
+        newItem.textContent = "WOW"
+        secondLang.replaceWith(newItem)
+
+
+        //edit
+
+        const firstLang = document.querySelector("li:first-child")
+        firstLang.outerHTML = '<li>TypeScript</li>'
+
+        // remove
+
+        const lastLang =document.querySelector("li:last-child")
+        lastLang.remove()
+
+
+</script>
+<!-- <script>
+    function addLanguage(langName){
+      const li = document.createElement('li');
+      li.innerHTML = `${langName}`//in this case its traverse all the nodes of a tree 
+      document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("python")
+    addLanguage("Js")
+    addLanguage("typescript")
+
+    function addOptimize(langName){
+       const li = document.createElement('li')
+       li.appendChild(document.createTextNode(langName)) // but in this case its only create a textNode 
+       document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage('golang')
+
+    // Edit
+
+   const secondLang = document.querySelector("li:nth-child(2)")
+   console.log(secondLang);
+   
+   // secondLang.innerHTML = "mojo"
+   const newLi = document.createElement('li')
+   newLi.textContent = "mojo"
+   secondLang.replaceWith(newLi)
+
+   // edit
+  const firstLang = document.querySelector("li:first-child")
+  firstLang.outerHTML = '<li>Typescript</li>'
+
+  //remove
+
+  const lastLang = document.querySelector("li:last-child")
+  lastLang.remove()
+
+</script> -->
+</html>

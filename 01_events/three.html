@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Interval Example</title>
+</head>
+<body>
+
+  <h1>Chai aur Javascript With HC</h1>
+
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+  
+  <script>
+
+    
+   const sayDate = function(str) {
+    console.log(str, Date.now());
+    
+   }
+
+   const intervalId = setInterval(sayDate,2000,"hi");
+
+   clearInterval(intervalId)
+  </script>
+</body>
+</html>
+
+
+
+<!--  generate a random color -->
+<!-- 
+const randomColor = function () {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+let intervalId;
+
+const setColor = function () {
+  document.body.style.backgroundColor = randomColor();
+};
+
+const startBgColorChange = function () {
+  if (!intervalId) {
+    intervalId = setInterval(setColor, 1000);
+  }
+};
+
+const stopBgColorChange = function () {
+  clearInterval(intervalId);
+  intervalId = null;
+};
+
+document.getElementById('start').addEventListener('click', startBgColorChange);
+document.getElementById('stop').addEventListener('click', stopBgColorChange); -->
+

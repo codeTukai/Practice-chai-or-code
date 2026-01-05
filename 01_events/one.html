@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html events</title>
+  </head>
+  <body style="background-color: cadetblue">
+    <div class="parent">
+      <ul id="images">
+    
+      <li>
+        <img width="200px" id="myImg1"
+        src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
+        alt="myImg"
+      </li>
+      <li>
+        <img width="200px" id="myImg"
+        src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
+        alt="myImg"
+      </li>
+      <li>
+        <img width="200px" id="myImg"
+        src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
+        alt="myImg"
+      </li>
+      <li>
+        <img width="200px" id="myImg"
+        src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
+        alt="myImg"
+      </li>
+      <li>
+        <img width="200px" id="myImg"
+        src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
+        alt="myImg"
+      </li>
+      <li>
+        <img width="200px" id="myImg"
+        src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
+        alt="myImg"
+      </li>
+      <li>
+        <img width="200px" id="myImg" 
+        src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
+        alt="myImg"
+      </li>
+      <li>
+        <img width="200px" id="myImg" 
+        src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
+        alt="myImg"
+        </div>
+        <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+      </li>
+        </ul>
+    </div>
+    <script>
+      // document.getElementById("myImg").addEventListener("click", function() {
+      //     alert("Button was clicked!");
+      // });
+      // attachEvent()//work on internal explorer
+      // jQuery - on---(eventListener)
+
+      
+
+
+      //type, timeStamp, defaultPrevented---stop to change the default behavior 
+      //**target(The element on which the event actually occurred (the deepest element that triggered the event).), 
+
+      // **toElement(Used in mouseover/mouseout events. Represents the element mouse moved to (in mouseout) or from (in mouseover).) 
+
+      // srcElement(IE-only version of target. Modern browsers use target.), 
+
+      // currentTarget(The element on which the event listener is currently attached. Useful in event delegation.)
+
+      //clientX(X-coordinate relative to the viewport (browser window)),
+      //  clientY(Y-coordinate relative to the viewport.)
+      //  screenX(X-coordinate relative to the physical screen.)
+      // screenY(Y-coordinate relative to the physical screen.)
+
+      //altKey---true if the Alt key was pressed during the event
+      // ctrlKey----true if the Control key was pressed
+      //  shiftKey----true if the Shift key was pressed
+      // keyCode--The numeric code of the key pressed (deprecated, use key instead)
+
+     document.getElementById("images").addEventListener("click", function(e) {
+          console.log("Clicked inside the ul");
+          
+      },false);
+
+    //if i write true instead of false then it can be use capturing process when its follows top to button approach(likes-- at first print ul or Clicked inside the ul then images click)
+    //  document.getElementById("myImg1").addEventListener("click", function(e) {
+    //       console.log("Images Clicked");
+    //       e.stopPropagation();
+          
+    //   },false);
+
+    //   document.getElementById('google').addEventListener('click', (e)=>{
+    //     console.log("google clicked");
+        
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //   },false)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+      //  console.log(e.target.parentNode);
+       console.log(e.target.tagName);
+       if (e.target.tagName === 'IMG') {
+        console.log(e.target.id);
+        
+        let removeIt = e.target.parentNode
+
+       removeIt.remove();
+        
+       }
+
+      
+       
+
+
+
+      // removeIt.parentNode.removeChild(removeIt)
+
+       
+      //Difference: target vs currentTarget
+
+// event.target → the actual element that triggered the event (child).
+
+// event.currentTarget → the element where the listener is attached (parent).
+      
+
+
+    },false);
+
+
+
+
+
+
+
+
+//event propogation 
+//bubling 
+// e.preventDefault() → stops default browser behavior.
+
+// e.stopPropagation() → stops event bubbling to parent elements.
+
+    </script>
+  </body>
+</html>
