@@ -1,4 +1,5 @@
 "use strict"; //treat to all like new version of javaScript
+// alert( 3 + 3) // we use nodeJS , not browser so its cant be execute
 let val1=10;
 let val2=5;
 function add(num1,num2){ 
