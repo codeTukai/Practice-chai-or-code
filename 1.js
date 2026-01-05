@@ -1,26 +1,26 @@
-// const accountID = 10033;
-// let accountEmail = "tukai@google.com"
-// var accountPassword = "12345" 
-// let accountCity = "jaipur"
-// let accountState;
+const accountID = 10033;
+let accountEmail = "tukai@google.com"
+var accountPassword = "12345" 
+let accountCity = "jaipur"
+let accountState;
 
-// {
-//     accountPassword = "13333";
-// }
+{
+    accountPassword = "13333";
+}
 
 
-// // accountID = 2;
-// accountEmail = "ghosh@gmail.com"
-// // accountPassword = "189388"
-// let acc;
-// /*prefer not be use var
-// because of issues in block scope and functional scope */
-// // console.log(table("accountID,accountEmail,accountPassword,accountCity"));
-// // accountPassword = "234544" 
-// console.log(accountID);
-// console.log(accountEmail);
-// console.log(accountPassword);
-// console.table([accountID,accountEmail,accountPassword,accountCity,acc,accountState]);
+// accountID = 2;  // not allowed
+accountEmail = "ghosh@gmail.com"
+// accountPassword = "189388"
+let acc;
+/*prefer not to use var
+because of issues in block scope and functional scope */
+// console.log(table("accountID,accountEmail,accountPassword,accountCity"));
+accountPassword = "234544" 
+console.log(accountID);
+console.log(accountEmail);
+console.log(accountPassword);
+console.table([accountID,accountEmail,accountPassword,accountCity,acc,accountState]);
 
 
 
