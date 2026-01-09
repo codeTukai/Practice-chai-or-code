@@ -15,10 +15,10 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId); // Result is false ...When using Symbol it convert its becomes a unique values and you use another symbol and values is same in this case its be not same ...
+// console.log(id === anotherId); // Result is false ...When using Symbol it convert its becomes a unique values and you use another symbol and values is same in this case its be not same ...
 
 const bigNumber = 33333333344444444444n
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
 
 
@@ -32,7 +32,7 @@ let myObj = {
      name : "tukai",
      age : 22,
      email : "codetukai33@gmail.com",
-     function: function Tukai(params) {
+     function: function Tukai() {
         console.log("tukai");
         
      }
@@ -42,6 +42,9 @@ let myObj = {
 const myFunction = function(){
     console.log("Hello World");
 }
+
+// console.log(myObj.function);
+
 // console.log(typeof id);
 
 
@@ -54,9 +57,12 @@ const myFunction = function(){
 
 // Stack (primitive), Heap (NON-Primitive) 
 
-let myYoutubeName = "tukai@gm" //myYoutubeName is a variable name
+let myYoutubeName = "tukai@gmail.com" //myYoutubeName is a variable name
 let anotherName = myYoutubeName
+
 anotherName   = "google@abc"
+
+
 
 console.log(myYoutubeName);
 console.log(anotherName);
@@ -66,14 +72,13 @@ let userOne = {
     upi : "user@ybl"
 }
 
+
 let userTwo = userOne
 userTwo.email = "tukaighosh@google.com"
+
+
+console.log(userTwo.email);
 console.log(userOne.email);
-// console.log(userTwo.email);
-// console.log(userOne.upi);
-
-
-// console.log(userTwo.email);
 
 
  
