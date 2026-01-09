@@ -24,8 +24,8 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 let someNumber = 33
 
 let showNumber = String(someNumber)
-console.log(typeof showNumber);
-console.log(showNumber);
+// console.log(typeof showNumber);
+// console.log(showNumber);
 
 
 /////////////********* operation ************///////////////
@@ -40,23 +40,29 @@ let negValue = -value
 // console.log(2/2);
 // console.log(2%3);
 
-// let str1 = "Hello"
-// let str2 = " Tukai"
+let str1 = "Hello"
+let str2 = " Tukai"
 
-// let str3 = str1 + str2;
+let str3 = str1 + str2;
 // console.log(str3);
 // console.log("1" + 2);
 // console.log(1+"2");
-// console.log("3"- 2);
-// console.log("1"+2+2);
-// console.log(+true);
+// // console.log("3"- 2);
+// // console.log("1"+2 + 2); //if in thats cases string declared first then the next all will be treat as a string 
+// console.log(1 + 2 + 2 + "3"); //but if first declared number then operation is done then 
+// console.log(+true); 
+// console.log(false + 1);
+
+let num1 , num2, num3
+
+num1 = num2= num3 = 2+2
 
 
 
-// let gameCounter = 100
-// gameCounter++;
-// ++gameCounter;
-// console.log(gameCounter);
+let gameCounter = 100
+gameCounter++;
+++gameCounter;
+console.log(gameCounter);
 // console.log(gameCounter);
 
 let x = 5;
