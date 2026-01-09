@@ -1,21 +1,21 @@
-// let score = "Hii, Hello world"
-// let score1 = false
+let score = "Hii, Hello world"
+let score1 = false
 
-// console.log(typeof score);
-// console.log(typeof (score));
+// console.log(typeof score);//string
+// console.log(typeof (score)); // its use() method
 
 
-// let valueNumber = Number(score)
-// console.log(typeof valueNumber);
-// console.log(valueNumber);
+let valueNumber = Number(score) // convert into number
+// console.log(typeof valueNumber); //number
+// console.log(valueNumber); // if it will be failed to covert a number then it will be return as a NaN and also be a 0.
 
 //"33" => 33
-// "33abc" => NaN
+// "33abc" => NaN(not a number)
 // true => 1; false => 0
 
 let isLoggedIn = ""
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-// console.log(booleanIsLoggedIn);
+// console.log(booleanIsLoggedIn);//false because of its represent an empty string
 
 
 // 1 = true , 0 = false 
@@ -24,8 +24,8 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 let someNumber = 33
 
 let showNumber = String(someNumber)
-// console.log(typeof showNumber);
-// console.log(showNumber);
+console.log(typeof showNumber);
+console.log(showNumber);
 
 
 /////////////********* operation ************///////////////
@@ -62,7 +62,7 @@ let negValue = -value
 let x = 5;
 let y = x++;
 
-console.log(x,y);
+// console.log(x,y);
 
 
 

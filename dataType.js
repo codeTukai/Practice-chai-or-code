@@ -12,7 +12,7 @@ let isLoggedIn = true
 //number => 2 to power 53
 // bigInt
 //string => ""
-// boolean true or false 
+// boolean => true or false 
 // null => standalone value - its a represented a empty value
 // undefine => value not define or assign 
 // symbol => unique
