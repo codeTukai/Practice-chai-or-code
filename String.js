@@ -1,52 +1,39 @@
 const name = "Tukai"
-const repoCount = 58
 
+const number = 35
 
-// console.log(name + repoCount+ " value");
+// console.log(name + number + "Hello");  //concatenation
+// console.log(`${name}`); //string interpolation
 
-console.log(`Hello my name is ${name} and my repo count is  ${repoCount}`); //string interpolation
+// console.log(`Hello, my name is ${name} and the value is ${number}`);
+const gameName = new String("Hello-World-123")
 
-const gameName = new String('Tukai_Gh')
-console.log(gameName);
 // console.log(gameName[0]);
 // console.log(gameName.__proto__);
 
 // console.log(gameName.length);
-// console.log(gameName.toUpperCase());
-// console.log(gameName.charAt(3));
+// console.log(gameName.toLowerCase());
 
-// console.log(gameName.indexOf('i'));
+console.log(gameName.charAt(3));
+console.log(gameName.indexOf('W'));
 
-// const newString = gameName.substring(0, 4)
+const newString = gameName.substring(0, 4)
 // console.log(newString);
 
+const anotherString = gameName.slice(-8, 5)
+console.log(anotherString);
 
-// const anotherString = gameName.slice(-8, 4)
-// console.log(anotherString);
+const newStringOne = "   tukai   "
+console.log(newStringOne);
+console.log(newStringOne.trim());
 
-
-const myWord = new String("Hello")
-const reverseOrder = myWord.split("").reverse().join("")
-console.log(reverseOrder);
-
-
+console.log(gameName.trim().split("").reverse("").join(""));//reverse a string
 
 
+const url = "https://tukai.com/tukai%300ghosh"
 
+console.log(url.replace('%300', '_'))
 
+console.log(url.includes('tukai'))
 
-const newString1 ="     Tukai    "
-console.log(newString1);
-
-console.log(newString1.trim());// remove the starting and the ending space 
-
-  const url = "https://tukai.com/tukai%20#@!@#ghosh"
-
-  console.log(url.replace('%20', '-'));
-  console.log(url.replace('#@!@#', '//').replace('%20', '-'));
-
-  console.log (url.includes('ghosh'));
-
-  console.log(gameName.split('_'));
-  
-  
+console.log(gameName.split('-'));
