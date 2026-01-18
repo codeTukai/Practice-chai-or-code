@@ -7,7 +7,7 @@ const mySym = Symbol("key1")  // In JavaScript, a key refers to the name of a pr
 
  const JsUser = {          // objects are always in present key values pair 
     name : "Tukai",
-    "full name" : "Tukai Ghosh",
+    "full name" : "Tukai Ghosh",//you can't use this key becoz its already declare as a string so string can't be access by dot(.)
     [mySym]: "myKey1",   // when you refer symbol as a symbol then use in this syntax *************************
     age : 23,
     location : "West Bengal",

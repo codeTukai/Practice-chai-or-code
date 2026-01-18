@@ -1,1 +1,1 @@
-.toDateString()
+symbol
