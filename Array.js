@@ -1,5 +1,7 @@
-const myArr = [10, 20, 22, 30 ,40, 47]//Array is an object, arr means where we can store multiple values in a single variable.
+const myArr = [10, 20, 22, 30 ,40, 47, "tukai"]//Array is an object, arr means where we can store multiple values in a single variable.
 const myHeroes = ["N","p","s"]
+
+console.log(myArr);
 
 // console.log(myArr[0]);
 
