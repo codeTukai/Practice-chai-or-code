@@ -68,14 +68,14 @@ users[1].email
 
 // console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));//expected output is given in an array likes that [ [],[],[] ]
+console.log(Object.keys(tinderUser));  //its convert its keys into an array
+console.log(Object.values(tinderUser)); //"same as its values"
+console.log(Object.entries(tinderUser));//expected output is given in an array likes that [ [],[],[] ]
 
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
- 
+ ///////////////////////////////// part 3 //////////////////////////
 const course = {
     courseName: "js in hindi",
     price : "999",

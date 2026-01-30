@@ -7,7 +7,7 @@ function sayMyName(){ // function is a keyword and sayMyName is variable name an
     console.log("H");    
 }
 
-// sayMyName() //reference of a function when we will execute the function the ()brackets is used for execution of a function and it is a reference
+// sayMyName() //reference of a function when we execute the function the () brackets is used for execution of a function and it is a reference
 
 // function addTwoNumbers(num1,num2){ //(parameter)
 //    console.log( num1 + num2);

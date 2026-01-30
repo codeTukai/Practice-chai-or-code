@@ -21,7 +21,7 @@ console.log(JsUser.email); // when its access by using dot(.) then its not be a 
 // console.log(JsUser["email"]);
 // console.log(JsUser["full name"]);
 // console.log(JsUser[mySym]);
-// console.log(typeof [mySym]);
+console.log(typeof [mySym]);
 
 
 JsUser.email = "td@gmail.com"
@@ -40,6 +40,14 @@ JsUser.greetingTwo = function(){
 }
 console.log(JsUser.greeting());
 console.log(JsUser.greetingTwo());  
+
+JsUser.hii = function () {
+ console.log("hii");
+    
+}
+
+console.log(JsUser.hii());
+
 
 
  

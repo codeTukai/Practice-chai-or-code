@@ -2,7 +2,7 @@
 //     username: "Hello",
 //     price : "999",
 //     webSite : function () {
-//         console.log(`${this.username} welcome to my website`);//this refers to current context 
+//         console.log(`${this.username} welcome to my website`);// this refers to the current context 
 //         console.log(this);
         
         
@@ -12,7 +12,7 @@
 // user.webSite()//context means values and change the context means change the values 
 // user.username = "sam"
 // user.webSite()
-// console.log(this);// *****//***in the browser which global object are present they all are window object**********
+// console.log(this);// *****//***in the browser which global object are present that all are window object**********  //+++++ in case of node thats refer a empty object{}
 
 
 // function chai(){

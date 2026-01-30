@@ -1,4 +1,15 @@
 //truthy values
+
+
+const score ="0"
+
+if (score) {
+    console.log("its true");
+    
+} else {
+    console.log("false");
+    
+}
 const userEmail = function () {
     
 }
@@ -12,24 +23,26 @@ if (userEmail ) {
 
 // Falsy values 
 
-// false, 0, -0, BigInt 0n, "", undefined, NaN
+// false, 0, -0, BigInt 0n, "",null, undefined, NaN
 
 //Truthy values 
 // "0"(cabiet), 'false', " ", [], {}, function(){}
 
 
-// if (userEmail.length === 0) {
-//     console.log("Array is empty");
+if (userEmail.length === 0) {
+    console.log("Array is empty");
     
-// }else{
-//     console.log("No there is a string ");
+}else{
+    console.log("No there is a string ");
     
-// }
+}
 
-const obj = {}
+const obj = {
+    // user: 'tukai'
+}
 
-if(Object.keys(obj).length === 0) {
-    // console.log("Object is empty");
+if(Object.keys(obj).length === 0) { //convert a obj into array
+    console.log("Object is empty");
     
 }else{
     console.log("present");
@@ -48,7 +61,7 @@ let val1;
 // val1 =  null ?? 10
 // val1 = undefined ?? 15
 // val1 = null ?? undefined
-// val1 = null ?? 10 ?? 20
+val1 = null ?? 10 ?? 20
 
 // console.log(val1);
 
@@ -59,3 +72,16 @@ let val1;
 const iceTeaPrice = 100
 iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80");
 
+const addToCart = true
+addToCart === true ? console.log("successfully add ") : console.log("not add to cart");
+
+
+let Hii = "10";
+
+if (Hii === 10) {
+    console.log("false");
+    
+}else{
+    console.log("true");
+    
+}

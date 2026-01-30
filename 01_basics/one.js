@@ -23,7 +23,7 @@ if (score>100) {
 
 const balance = 1000
 
-// if (balance > 500) console.log("test"),console.log("test"); not use this syntax
+// if (balance > 500) console.log("test"),console.log("test"); // implicit  not use this syntax
 
 //nested if
 
