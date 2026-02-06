@@ -59,11 +59,11 @@ let val1;
 // let var1;
 // val1  = 5 ?? 10
 // val1 =  null ?? 10
-// val1 = undefined ?? 15
+val1 = undefined ?? 0
 // val1 = null ?? undefined
-val1 = null ?? 10 ?? 20
+// val1 = null ?? 10 ?? 20
 
-// console.log(val1);
+console.log(val1);
 
 // Ternary operator
 

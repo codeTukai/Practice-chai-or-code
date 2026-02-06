@@ -5,6 +5,13 @@
 
 const arr= [1, 2, 3, 4, 5]
 
+for (const element of arr) {  // object means which element i used the loop
+    console.log(element);
+    
+}
+
+
+
 for (const num of arr) {
     // console.log(num);
     
@@ -39,8 +46,8 @@ const myObject ={
     game2 : "spiderman"
 }
 
-for (const [key, value] of myObject) {
-    console.log(key,':-', value);
+// for (const [key, value] of myObject) {
+//     console.log(key,':-', value);
     
     
-}
+// }

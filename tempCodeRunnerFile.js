@@ -1,1 +1,1 @@
-symbol
+i*j

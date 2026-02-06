@@ -261,12 +261,176 @@ if (score> 100) {
 
 //loop
 
-for (let i = 0; i < 10; i++) {
-//   console.log(i);
+// for (let i = 0; i < 10; i++) {
+// //   console.log(i);
 
-if (i<=5) {
-    console.log(i);
+// if (i<=5) {
+//     console.log(i);
+    
+// }
+  
+// }
+
+
+// for (let i = 1; i < 10; i++) {
+
+//     console.log("outer",i);
+    
+//     for (let j = 1; j < 10; j++) {
+//     // console.log(`inner value: ${j} and outer value is: ${i}`);
+//     console.log(i + '*' + j + ' = ' + i*j );
+    
+    
+        
+//     }
+    
+// }
+
+
+// let myArray = ["a","b","c"]
+// for (let i = 0; i < myArray.length; i++) {
+//     const element = myArray[i];
+//     console.log(element);
+    
+    
+// }
+
+// for (let index = 0; index < 20; index++) {
+    
+//     if (index == 5) {
+//         console.log("Element is detected ");
+//         // break
+//         continue
+        
+//     }
+//     console.log(`the element is: ${index}`);
+    
+    
+// }
+
+// let index = 0
+// while (index <= 10) {
+//     console.log(`value of index is ${index}`);
+//     index = index + 3
+    
+// }
+
+// let myArray = ["flash","batman","superman"]
+
+// let arr = 0
+
+// while (arr < myArray.length) {
+//     console.log(`value is : ${myArray[arr]}`);
+//     arr = arr+1
+// }
+
+
+// let score1 = 1
+
+// do {
+//     console.log(`Score is ${score1}`);
+//     score1++
+    
+// } while (score1 <= 10);
+
+
+//for of
+
+const greeting = "Hello World"
+
+for (const num of greeting) {
+    // console.log(num);
     
 }
-  
+// small notes -------- we can't iterate a plain object using for...of --[its iterate only string, array]
+// const obj = {
+//     user: 'Tukai',
+//     id: 12345
+// }
+
+// for (const num of obj) {
+//     console.log(`user is: ${num}`);
+    
+// }
+
+
+// Maps
+
+
+// const myMap ={
+//     IN: "india",
+//     USA: "united states of America",
+//     RS: "russia"
+// }
+
+// console.log(myMap);
+
+const map = new Map()
+
+const userRoles = new Map();
+
+userRoles.set(101, "Admin");
+userRoles.set(102, "Editor");
+userRoles.set(103, "User");
+
+// console.log(userRoles.get(101)); // Admin
+// console.log(userRoles.get(103)); 
+
+const chars = "TukaiGhosh";
+const count = new Map();
+
+for (const ch of chars) {
+    // console.log(ch);
+    
+    count.set(ch, (count.get(ch) || 0) + 1);
 }
+
+// console.log(count);
+
+
+//for in
+
+const myObj = {
+    js: "javascript",
+    py: "python",
+    rb: "ruby",
+    swift: "swift by apple"
+}
+
+for (const key in myObj) {
+//   console.log(`${key} shortcut is for ${myObj[key]}`);  
+}
+
+// console.log(myObj.rb);
+
+
+const myArray = ["js","ruby","py","ruby","java"]
+
+for (const key in myArray) {
+//    console.log(myArray[key]);
+   
+    
+    
+}
+
+
+//for each
+
+
+const coding = ["js","ruby","py","ruby","java"]
+
+coding.forEach((item, index, arr)=>{
+    console.log(item, index, arr
+        
+    );
+    
+});
+
+
+// function printMe(item){
+// console.log(item);
+
+// }
+
+// coding.forEach(printMe)
+

@@ -18,10 +18,10 @@ const coding = ["js", "ruby", "java", "c++"]
 
 // coding.forEach(printMe)
 
-// coding.forEach( (item, index, arr)=>{
-//     console.log(item, index, arr);
+coding.forEach( (item, index, arr)=>{
+    console.log(item, index, arr);
     
-// })
+})
 
 
 const myCoding =
@@ -37,14 +37,12 @@ languageName : "python",
     {
 languageName : "c++",
         languageFilename: "cpp"
-    },
-    {
-languageName : "php",
-        languageFilename: "php"
-    },
-]
+    }
+  
+  ]
 
-myCoding.forEach((item)=>{
+  myCoding.forEach((item)=>{  //item is current element of an array
     console.log(item.languageFilename);
+    console.log(item.languageName);
     
-})
+  })

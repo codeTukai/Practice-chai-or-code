@@ -20,7 +20,7 @@ while (arr < myArray.length) {
 
 let score = 11
 do {
-    console.log(`score is : ${score}`);
+    console.log(`score is : ${score}`); //at first work is held then check the condition 
     score++
     
 } while (score < 10);
