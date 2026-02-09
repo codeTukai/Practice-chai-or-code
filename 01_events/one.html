@@ -6,48 +6,49 @@
     <title>html events</title>
   </head>
   <body style="background-color: cadetblue">
+    <h2>Amazing images</h2>
     <div class="parent">
       <ul id="images">
     
       <li>
         <img width="200px" id="myImg1"
         src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
-        alt="myImg"
+        alt="myImg" >
+      </li>
+      <li>
+        <img width="200px" id="owl"
+        src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
+        alt="myImg" >
       </li>
       <li>
         <img width="200px" id="myImg"
         src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
-        alt="myImg"
+        alt="myImg" >
       </li>
       <li>
         <img width="200px" id="myImg"
         src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
-        alt="myImg"
+        alt="myImg">
       </li>
       <li>
         <img width="200px" id="myImg"
         src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
-        alt="myImg"
+        alt="myImg">
       </li>
       <li>
         <img width="200px" id="myImg"
         src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
-        alt="myImg"
-      </li>
-      <li>
-        <img width="200px" id="myImg"
-        src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
-        alt="myImg"
+        alt="myImg">
       </li>
       <li>
         <img width="200px" id="myImg" 
         src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
-        alt="myImg"
+        alt="myImg">
       </li>
       <li>
         <img width="200px" id="myImg" 
         src="https://th.bing.com/th/id/OIP.7cRYFyLoDEDh4sRtM73vvwHaDg?w=320&h=166&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
-        alt="myImg"
+        alt="myImg">
         </div>
         <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
       </li>
@@ -58,12 +59,12 @@
       //     alert("Button was clicked!");
       // });
       // attachEvent()//work on internal explorer
-      // jQuery - on---(eventListener)
+      // jQuery - on---(onEventListener)
 
       
 
 
-      //type, timeStamp, defaultPrevented---stop to change the default behavior 
+      //type, timeStamp, (defaultPrevented---stop to change the default behavior )
       //**target(The element on which the event actually occurred (the deepest element that triggered the event).), 
 
       // **toElement(Used in mouseover/mouseout events. Represents the element mouse moved to (in mouseout) or from (in mouseover).) 
@@ -83,7 +84,7 @@
       // keyCode--The numeric code of the key pressed (deprecated, use key instead)
 
      document.getElementById("images").addEventListener("click", function(e) {
-          console.log("Clicked inside the ul");
+          console.log("click inside the ul");
           
       },false);
 
@@ -93,16 +94,21 @@
     //       e.stopPropagation();
           
     //   },false);
+    //  document.getElementById("owl").addEventListener("click", function(e) {
+    //       console.log("Images Clicked");
+    //       e.stopPropagation();
+          
+    //   },false);
 
-    //   document.getElementById('google').addEventListener('click', (e)=>{
-    //     console.log("google clicked");
+      document.getElementById('google').addEventListener('click', (e)=>{
+        console.log("google clicked");
         
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //   },false)
+        e.preventDefault();
+        // e.stopPropagation();
+      },false)
 
     document.querySelector('#images').addEventListener('click', function(e){
-      //  console.log(e.target.parentNode);
+       console.log(e.target.parentNode);
        console.log(e.target.tagName);
        if (e.target.tagName === 'IMG') {
         console.log(e.target.id);
@@ -112,25 +118,24 @@
        removeIt.remove();
         
        }
-
-      
-       
-
-
-
       // removeIt.parentNode.removeChild(removeIt)
-
-       
+      
+      },false);
       //Difference: target vs currentTarget
 
 // event.target → the actual element that triggered the event (child).
 
 // event.currentTarget → the element where the listener is attached (parent).
-      
 
+// document.querySelector('#images').addEventListener('click', function(e){
+//   console.log(e.target.parentNode);
+//   if(e.target.tagName === 'IMG'){
 
-    },false);
-
+//     let removeIt = e.target.parentNode
+//     removeIt.remove()
+//   }
+  
+// },false)
 
 
 

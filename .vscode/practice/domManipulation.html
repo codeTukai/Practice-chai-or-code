@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body style="background-color: #212121; color: #f1f1f1;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(lang) {
+        const li = document.createElement('li')
+        li.innerHTML = `${lang}`//traversing tree
+        document.querySelector('.language').appendChild(li)
+
+    }
+
+    addLanguage("hi")
+    addLanguage("hello")
+    addLanguage("js")
+
+    function addOptimize(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))//optimized
+        document.querySelector('.language').appendChild(li)
+            
+    }
+    addOptimize("golang")
+
+    //edit
+    const secondLang = document.querySelector('li:nth-child(2)')
+    console.log(secondLang);
+    // secondLang.innerHTML ="python"
+    const newLi = document.createElement('li')
+    newLi.textContent = "python"
+    secondLang.replaceWith(newLi)
+    
+
+//remove
+
+const lastlang = document.querySelector('li:nth-child(3)')
+lastlang.remove()
+</script>
+
+
+
+</html>

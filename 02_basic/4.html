@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chai or code</title>
 </head>
-<body style="background-color: #212121; color: #ffff;">
+<body style="background-color: #212121; color: #fff;">
     <ul class="language">
+
         <li>Javascript</li>
     </ul>
 </body>
@@ -23,7 +24,7 @@
           addLanguage("typescript")
 
           function addOptimize(langName) {
-            const li =document.createElement('li')
+            const li = document.createElement('li')
             li.appendChild(document.createTextNode(langName))
             document.querySelector('.language').appendChild(li)
 
@@ -33,13 +34,14 @@
 
           //Edit
 
+
           const secondLang = document.querySelector("li:nth-child(2)")
         //   secondLang.innerHTML = "mojo"
         const newItem = document.createElement('li')
         newItem.textContent = "WOW"
         secondLang.replaceWith(newItem)
 
-        
+
 
         //edit
 
@@ -66,7 +68,7 @@
 
     function addOptimize(langName){
        const li = document.createElement('li')
-       li.appendChild(document.createTextNode(langName)) // but in this case its only create a textNode 
+       li.appendChild(document.createTextNode(langName)) // in this case its only create a textNode 
        document.querySelector('.language').appendChild(li)
     }
 
