@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Function</title>
+</head>
+<body>
+    <h1>Hii Js User</h1>
+    <button id="stp">stop</button>
+</body>
+
+<script>
+    // setTimeout(function () {
+    //     console.log("Say Hii");
+
+        
+    // },2000)
+    // setInterval(function () {
+    //     console.log("Say Hii");
+
+        
+    // },2000)
+
+    const print = ()=>{
+        console.log("Hello World");
+        
+    }
+    const changeText = function() {
+        
+        document.querySelector('h1').innerHTML = 'best'
+    }
+
+    const changeMe = (changeText, 2000);
+    document.querySelector('#stp').addEventListener('click', ()=>{
+        console.log("stopped");
+        clearTimeout(changeMe)
+        // clearTimeout(changeText, 2000)
+        
+    })
+
+    
+
+</script>
+</html>

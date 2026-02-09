@@ -15,23 +15,15 @@
   <script>
 
     
-   const sayDate = function(str) {
-    console.log(str, Date.now());
+  //  const sayDate = function(str) {
+  //   console.log(str, Date.now());
     
-   }
+  //  }
 
-   const intervalId = setInterval(sayDate,2000,"hi");
+  //  const intervalId = setInterval(sayDate,2000,"hi");
 
-   clearInterval(intervalId)
-  </script>
-</body>
-</html>
-
-
-
-<!--  generate a random color -->
-<!-- 
-const randomColor = function () {
+  //  clearInterval(intervalId)
+  const randomColor = function () {
   const hex = '0123456789ABCDEF';
   let color = '#';
 
@@ -40,6 +32,9 @@ const randomColor = function () {
   }
   return color;
 };
+
+// console.log(randomColor());
+
 let intervalId;
 
 const setColor = function () {
@@ -58,5 +53,14 @@ const stopBgColorChange = function () {
 };
 
 document.getElementById('start').addEventListener('click', startBgColorChange);
-document.getElementById('stop').addEventListener('click', stopBgColorChange); -->
+document.getElementById('stop').addEventListener('click', stopBgColorChange); 
+
+
+  </script>
+</body>
+</html>
+
+
+
+<!--  generate a random color -->
 
