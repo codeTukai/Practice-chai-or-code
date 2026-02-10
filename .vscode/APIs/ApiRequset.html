@@ -17,10 +17,10 @@
        xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
         if (xhr.readyState === 4) {
-            const Data = JSON.parse(this.responseText)
+            const Data = JSON.parse(this.responseText) //convert a string into json
             console.log(typeof Data);
             
-         console.log(Data.avatar_url);//this use in current context
+         console.log(Data.followers);//this use in current context
        }
 
     
