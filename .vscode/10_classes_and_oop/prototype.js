@@ -17,16 +17,16 @@ let heroPower = {
 }
 
 
-Object.prototype.highest = function(){
-    console.log(`its access by all objects and also present`);
+// Object.prototype.highest = function(){
+//     console.log(`its access by all objects and also present`);
     
-}
+// }
 
 
-Array.prototype.hii =function(){
-    console.log(`it can possible`);
+// Array.prototype.hii =function(){
+//     console.log(`it can possible`);
     
-}
+// }
 
 // heroPower.highest()//object
 // myHeros.highest()//array
@@ -53,20 +53,26 @@ const TeachingSupport ={
 const TASupport ={
     makeAssesment : 'JS assignment',
     fullTime : true,
-    __proto__: TeachingSupport
+    __proto__: TeachingSupport //linking and reffer with another obj
 }
 
-teacher.__proto__ = User
+teacher.__proto__ = User  //teacher can access of user property using this protot method
 
-Object.setPrototypeOf(TeachingSupport,teacher)
+
+//modern syntax
+
+Object.setPrototypeOf(TeachingSupport,teacher)  
 
 
 let anotherUsername = "chaiAurCode                "
-String.prototype.truelength =function(){
+String.prototype.truelength = function(){
     console.log(`${this}`);
+    
     
     console.log(`True lenght is ${this.trim().length}`);
     
 }
 
 anotherUsername.truelength();
+"hii".truelength()
+"tukaiSayHello".truelength()

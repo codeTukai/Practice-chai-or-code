@@ -60,42 +60,65 @@
 // console.log("The Promise is either resolved or rejected");
 // })
 
-const promiseFive =new Promise(function(resolve,reject){
-     setTimeout(() => {
-        let error = false
-        if (!error) {
-            resolve({username: "JavaScript", password: "123"})
-        }else{
-            reject('ERROR: Something Went Wrong')
-        }
-    }, 1000);
+// const promiseFive =new Promise(function(resolve,reject){
+//      setTimeout(() => {
+//         let error = false
+//         if (!error) {
+//             resolve({username: "JavaScript", password: "123"})
+//         }else{
+//             reject('ERROR: Something Went Wrong')
+//         }
+//     }, 1000);
 
+// })
+
+// async function consumePromiseFive() {
+//   try {
+//       const promise = await promiseFive
+//     console.log(promise);
+//   } catch (error) {
+//     console.log(error);
+    
+//   }
+    
+// }
+
+// consumePromiseFive()
+
+
+// async function getAllUsers() {
+//     try {
+//         const response =await fetch('https://jsonplaceholder.typicode.com/users')
+//        const data =await response.json()
+//         console.log(data);
+        
+//     } catch (error) {
+//         console.log(error);
+        
+//     }
+// }
+
+// getAllUsers()
+
+
+
+const promise = new Promise (function (resolve, reject){
+setTimeout(()=>{
+    let error = false 
+if(! error){
+resolve ({koyel: "IN Case of Good situation: I always with you, and i love you 😘"})
+}else {
+reject ("In case of bad situation: there will I always here with you")
+}
+
+
+},1000)
+  
 })
 
-async function consumePromiseFive() {
-  try {
-      const promise = await promiseFive
-    console.log(promise);
-  } catch (error) {
-    console.log(error);
-    
-  }
-    
-}
-
-consumePromiseFive()
-
-
-async function getAllUsers() {
-    try {
-        const response =await fetch('https://jsonplaceholder.typicode.com/users')
-       const data =await response.json()
-        console.log(data);
-        
-    } catch (error) {
-        console.log(error);
-        
-    }
-}
-
-getAllUsers()
+promise.then((user)=>{
+console.log(user)
+// return user.koyel
+}).catch((err)=>{
+console.log(err)
+})

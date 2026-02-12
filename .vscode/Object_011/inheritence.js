@@ -3,7 +3,7 @@ class User {
         this.username = username //set username
     }
 
-    logMe(){
+    logMe(){ //method
 
         console.log(`USERNAME is ${this.username}`);
         
@@ -31,4 +31,8 @@ chai.addCouese()
 const tea = new User("masalaChai")
 // tea.addCouese()
 tea.logMe()
+console.log(chai === User);
+
 console.log(chai instanceof User);
+console.log(chai instanceof teacher);
+console.log(tea instanceof teacher);

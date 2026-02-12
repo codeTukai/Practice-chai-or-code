@@ -18,7 +18,7 @@ Object literal
 
 
 ## 4 pillara
-Abstraction (details hide )
+Abstraction (details hide )//fetch
 Encapsulation(wrapped up)
-Inheritence
+Inheritence--prototype video 
 Polymorphisms (many form)

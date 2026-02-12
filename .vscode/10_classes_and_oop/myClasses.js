@@ -2,11 +2,8 @@
 
 class User {
   //class is a keyword
-  constructor(
-    username,
-    email,
-    password //when a class innitialize a obj or get the new keyword
-  ) {
+  constructor(username,email,password) //when a class innitialize a obj or get the new keyword
+   {
     this.username = username;
     this.email = email;
     this.password = password;

@@ -13,6 +13,7 @@ class User {
   }
 
 }
+ 
 
 const hello = new User("Say Hello")
 // console.log(hello.createId())
@@ -26,6 +27,7 @@ class teacher extends User{
 }
 
 const iphone = new User("iphone", "i@gmail.com")
-iphone.logMe()
+// iphone.logMe()
+console.log(iphone.createId())
 console.log(teacher.createId())
-console.log(User.createId())
+// console.log(User.createId())

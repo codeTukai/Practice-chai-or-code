@@ -4,8 +4,8 @@ function multiplyByFive(num) {
 
 multiplyByFive.power = 2;
 
-console.log(multiplyByFive(5)); // function like as a object and if i want to access the function property like object it also possible
-console.log(multiplyByFive.power); //prototype is  object thats always null
+console.log(multiplyByFive(5)); //function is a function and it also be a object and its behabiour like a object if you want 
+console.log(multiplyByFive.power); // object's of prototype always a null
 
 console.log(multiplyByFive.prototype);
 
@@ -15,15 +15,18 @@ function createUser(username, score) {
 }
 
 createUser.prototype.increment = function () {
-  this.score++;
+    this.score++;//current context
 };
+
 
 createUser.prototype.printMe = function () {
   console.log(`price is ${this.score}`);
 };
 
-const chai = new createUser("chai", 25);
-const tea = new createUser("tea", 250);
+const chai =new createUser("chai", 25);
+const tea =new createUser("tea", 250);
+
+
 
 chai.printMe();
 tea.printMe();
@@ -39,7 +42,7 @@ A prototype is Linked: The newly created object gets linked to the prototype pro
 
 The constructor is called: The constructor function is called with the specified arguments and this is bound to the newly created object. If no explicit return value is specified from the constructor. Javascript assumes this.
 
-
+The new object is returned: After the constructor function has been called, if it doesnot return a non-primtive value (object,array, function,etc) the newly created object is returned.
 
 */
 

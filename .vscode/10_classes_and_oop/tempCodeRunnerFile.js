@@ -1,1 +1,2 @@
-console.log(chai);
+chai.printMe();
+tea.printMe();

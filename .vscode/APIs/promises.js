@@ -132,3 +132,6 @@ fetch("https://api.github.com/users/hiteshchoudhary")
     console.log(error);
     
 })
+
+console.log(typeof fetch);
+

@@ -5,7 +5,7 @@ const user = {
     loggedCount: 9,
 
     userDetails: function () {
-        //console.log("Connected DB");
+        // console.log("Connected DB");
         // console.log(`Username: ${this.userName}`);
         // console.log(this);
         
@@ -22,11 +22,11 @@ function User(username, loginCount, isLoggedIn){
     this.username = username;
     this.loginCount = loginCount;
     this.isLoggedIn = isLoggedIn;
-    this.greeting = function() {
+    // this.greeting = function() {
 
-        console.log(`Welcome ${this.username}`);
+    //     console.log(`Welcome ${this.username}`);
         
-    }
+    // }
 
 
 
@@ -37,6 +37,9 @@ function User(username, loginCount, isLoggedIn){
 const userOne = new User("Tukai", 12, true)
 const userTwo = new User("Tukai_Ghosh", 11, false)
 
-console.log(userOne);
+console.log(userOne.constructor);
 console.log(userTwo);
 
+
+//A constructor helps create multiple objects (instances) from one class.
+//create new context
