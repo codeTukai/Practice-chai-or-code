@@ -15,4 +15,4 @@ const User = {
 }
 
 const chai = Object.create(User) //factory function
-console.log(chai.email);
+console.log(chai.email); // its overwrite the method when its call the property

@@ -19,32 +19,28 @@
         // }
         // init();
 
-      // function outer(){
-      //     let userName = "hello"
-      //     function inner(){
-      //         console.log("inner", userName);
+    function outer(){
+      let name = "hello world";
+      function inner(){
+        console.log("outer", name);
+        
+      }
+      inner()
+    }
+    outer()
+    console.log("too outer", name);
+    
 
-      //     }function inner2(){
-      //         console.log("innertwo",userName);
+      function makeFunc() {
+        const name = "Mozilla";
+        function displayName() {
+          console.log(name);
+        }
+        return displayName; //whole function will be return / or whole lexical scope is return when the function will be return 
+      }
 
-      //     }
-      //     inner2()
-
-      //     inner()
-      // }
-      // outer()
-      // console.log("TOO OUTER", userName);
-
-      // function makeFunc() {
-      //   const name = "Mozilla";
-      //   function displayName() {
-      //     console.log(name);
-      //   }
-      //   return displayName; //whole function will be return / or whole lexical scope is return when the function will be return 
-      // }
-
-      // const myFunc = makeFunc();
-      // myFunc();
+      const myFunc = makeFunc();
+      myFunc();
 
 
     </script>
@@ -66,7 +62,7 @@
                  document.body.style.backgroundColor = `${color}`
             }
         }
-        document.getElementById('orange').onclick = clickHandler("orange")
+        document.getElementById('orange').onclick = clickHandler("orange") //function reference means its only provide function defination
         document.getElementById('green').onclick = clickHandler("green")
 
     </script>
