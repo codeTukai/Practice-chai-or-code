@@ -3,135 +3,135 @@ const promisesOne = new Promise(function(resolve, reject) {
     //DB calls, cryptography , network
     setTimeout(function() {
         console.log('Async task ls complete');
-        resolve();
+        // resolve();
         
         
     },1000)
 });
 
 promisesOne.then(function() {
-    console.log("Promise Consumed");
+    console.log("Pṁromise Consumed");
     
 })
 
 
-new Promise(function(resolve, reject) {
-    setTimeout(function() {
-        console.log("Async task 2");
-        resolve();
+// new Promise(function(resolve, reject) {
+//     setTimeout(function() {
+//         console.log("Async task 2");
+//         resolve();
         
         
-    },1000)
-}).then(function(){
-    console.log("Async 2 resolved");
+//     },1000)
+// }).then(function(){
+//     console.log("Async 2 resolved");
     
-})
+// })
 
-const promiseThree = new Promise(function(resolve,reject) {
-    setTimeout(function () {
-        resolve({userName:"chai", email:"codetukai@gmail.com"})
+// const promiseThree = new Promise(function(resolve,reject) {
+//     setTimeout(function () {
+//         resolve({userName:"chai", email:"codetukai@gmail.com"})
         
-    },1000)
-})
+//     },1000)
+// })
 
-promiseThree.then(function(params) {
-    console.log(params);
+// promiseThree.then(function(params) {
+//     console.log(params);
     
     
-})
+// })
 
 
-const promiseFour = new Promise(function (resolve,reject) {
-    setTimeout(function(){
-        let error = true
-                if (!error) {
-            resolve({userName:"code", password: "123"});
+// const promiseFour = new Promise(function (resolve,reject) {
+//     setTimeout(function(){
+//         let error = true
+//                 if (!error) {
+//             resolve({userName:"code", password: "123"});
             
-        } else {
-            reject('Error, Something went wrong')
+//         } else {
+//             reject('Error, Something went wrong')
             
-        }
+//         }
  
-    }, 1000);
+//     }, 1000);
     
-})
+// })
 
-// promiseFour.then().catch() // then using to access the value and cath is using for show the error
+// // promiseFour.then().catch() // then using to access the value and cath is using for show the error
 
- promiseFour
- .then((user)=>{
-    console.log(user);
-    return user.userName
+//  promiseFour
+//  .then((user)=>{
+//     console.log(user);
+//     return user.userName
     
   
-})
-.then((userName)=>{
-    console.log(userName);
+// })
+// .then((userName)=>{
+//     console.log(userName);
     
 
-})
-.catch((error)=>{
-    console.log(error);
+// })
+// .catch((error)=>{
+//     console.log(error);
     
-}).finally(()=>{
-    console.log("The Promises is resolve or reject");
+// }).finally(()=>{
+//     console.log("The Promises is resolve or reject");
     
-})
+// })
 
-const promiseFive = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        let error = true
-        if (!error) {
-            resolve({userName:"Javascript", password: "123"});
+// const promiseFive = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         let error = true
+//         if (!error) {
+//             resolve({userName:"Javascript", password: "123"});
             
-        } else {
-            reject('Error: JS went wrong')
+//         } else {
+//             reject('Error: JS went wrong')
             
-        }
-    }, 1000);
-})
+//         }
+//     }, 1000);
+// })
 
-async function consumePromise() {
-   try {
-     const response = await promiseFive
-    console.log(response);
-   } catch (error) {
-    console.log(error);
+// async function consumePromise() {
+//    try {
+//      const response = await promiseFive
+//     console.log(response);
+//    } catch (error) {
+//     console.log(error);
     
-   }
+//    }
     
     
-}
-
-consumePromise()
-
-
-// async function getAllUsers() {
-//   try {
-//      const respose = await fetch('https://jsonplaceholder.typicode.com/users')
-//    const data =await respose.json()
-//    console.log(data);
-//   } catch (error) {
-//     console.log("E:", error);
-    
-//   }
-   
 // }
 
-// getAllUsers()
+// consumePromise()
 
-fetch("https://api.github.com/users/hiteshchoudhary")
-.then((response)=>{
-    return response.json()
-})
-.then((data)=>{
-    console.log(data);
-    
-})
-.catch((error)=>{
-    console.log(error);
-    
-})
 
-console.log(typeof fetch);
+// // async function getAllUsers() {
+// //   try {
+// //      const respose = await fetch('https://jsonplaceholder.typicode.com/users')
+// //    const data =await respose.json()
+// //    console.log(data);
+// //   } catch (error) {
+// //     console.log("E:", error);
+    
+// //   }
+   
+// // }
+
+// // getAllUsers()
+
+// fetch("https://api.github.com/users/hiteshchoudhary")
+// .then((response)=>{
+//     return response.json()
+// })
+// .then((data)=>{
+//     console.log(data);
+    
+// })
+// .catch((error)=>{
+//     console.log(error);
+    
+// })
+
+// console.log(typeof fetch);
 
