@@ -385,7 +385,7 @@ for (const ch of chars) {
     count.set(ch, (count.get(ch) || 0) + 1);
 }
 
-// console.log(count);
+console.log(count);
 
 
 //for in

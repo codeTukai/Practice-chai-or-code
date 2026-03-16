@@ -9,7 +9,7 @@
 // console.log(values);
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 4, 6, 10]
-// // const newNums = myNum.filter((num)=> {
+// // const newNums = myNum.filter((num)=> { //its return values
 // //     return num > 4
     
 // // })

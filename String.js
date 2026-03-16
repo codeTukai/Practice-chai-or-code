@@ -6,7 +6,7 @@ const number = 35
 // console.log(`${name}`); //string interpolation
 
 // console.log(`Hello, my name is ${name} and the value is ${number}`);
-const gameName = new String("Hello-World-123")
+const gameName = new String("Hello-World-w-123")
 
 // console.log(gameName[0]);
 // console.log(gameName.__proto__);

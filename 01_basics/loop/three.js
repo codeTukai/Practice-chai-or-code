@@ -51,3 +51,7 @@ const myObject ={
     
     
 // }
+
+
+//notes :- for of is used only map becoz it is not iterable with object i want to used loop on object then used for in 
+        //    Map is not iterable its always return key value pairs 

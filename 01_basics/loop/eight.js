@@ -6,7 +6,7 @@ const myNums = [1, 2, 3]
 //     return acc + currValue
 // },0)
 
-const myTotal =myNums.reduce( (acc, currValue) => acc + currValue, 0)
+const myTotal =myNums.reduce( (acc, currValue) =>( acc + currValue),0)
 
 console.log(myTotal);
 
@@ -32,7 +32,7 @@ const shoppingCart = [
     },
 ]
 
-const addAllPrice = shoppingCart.reduce((acc, item)=> acc + item.Qnt, 0);
+// const addAllPrice = shoppingCart.reduce((acc, item)=> acc + item.Qnt, 0);
 
 // console.log(priceToPay);
 console.log(addAllPrice);

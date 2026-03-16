@@ -11,17 +11,17 @@ const coding = ["js", "ruby", "java", "c++"]
     
 // })
 
-// function printMe(item) {
-//     console.log(item);
+function printMe(item) {
+    console.log(item);
     
-// }
+}
 
 // coding.forEach(printMe)
 
-coding.forEach( (item, index, arr)=>{
-    console.log(item, index, arr);
+// coding.forEach( (item, index, arr)=>{
+//     console.log(item, index, arr);
     
-})
+// })
 
 
 const myCoding =
@@ -42,7 +42,7 @@ languageName : "c++",
   ]
 
   myCoding.forEach((item)=>{  //item is current element of an array
-    console.log(item.languageFilename);
-    console.log(item.languageName);
+    // console.log(item.languageFilename);
+    // console.log(item.languageName);
     
   })
